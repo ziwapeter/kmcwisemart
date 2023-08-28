@@ -1,0 +1,24 @@
+.textwhitenow {
+    color: white !important;
+    font-weight: 400 !important;
+  }
+  .bgcrimsonnow {
+    background-color: crimson !important;
+    color: white !important;  /* Replace with the actual shade of blue you need */
+  }
+
+  .textcolornow{
+    color: #dcdcdc !important;
+  }
+
+  .backgroundblue {
+    background-color: #3482F6 !important;
+  }
+  
+  .hover\:backgroundblue:hover {
+    background-color: #3482F6 !important;
+  }
+  
+  .textcrimson{
+    color: crimson;
+  }

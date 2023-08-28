@@ -7,12 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      textShadow: {
+        default: '0 2px 5px rgba(0, 0, 0, 0.5)',
+        lg: '0 2px 10px rgba(0, 0, 0, 0.5)',
       },
+      fontFamily:{
+        poppins:["var(--font-poppins)"]
+      }
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      extend: {
+      }
+    },
+  },
+  plugins: [
+
+    require('tailwindcss-textshadow')
+  ],
 }

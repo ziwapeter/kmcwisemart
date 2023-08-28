@@ -1,27 +1,107 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: crimson;
+  background-attachment: fixed;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  position: relative;
 }
+
+.order-button {
+  @apply mt-4 mb-4 py-2 px-6 sm:py-3 sm:px-8 lg:py-4 lg:px-10 text-white text-lg sm:text-xl lg:text-2xl font-medium rounded-lg transition-colors duration-200;
+  background-color: crimson;
+}
+.order-button:hover {
+  @apply bg-black;
+}
+.containerhome {
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  z-index: 20;
+}
+
+.homepage-background {
+  background-image: url('../../public/kmcbackground.webp');
+  background-color: crimson;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 65vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+
+.sticky-top {
+  position: fixed;
+  top: 0;
+  z-index: 50; 
+  width: 100%;
+}
+
+.invert-svg {
+  filter: invert(100%) brightness(1000%);
+}
+
+.hover\:invert-svg:hover {
+  filter: none;
+}
+
+.hover\:invert-svg-button:hover {
+  color:#3482F6
+}
+.background-crimson {
+  background-color: crimson;
+}
+
+.backgroundblue {
+  background-color: #3482F6;
+}
+
+.background-grey {
+
+ background-color: #F7F7F7;
+
+}
+button:hover .hover\:stroke-current {
+  stroke: #3482F6;
+}
+.custom-height {
+  min-height: calc(100vh - 68px);
+  margin-top: 68px;
+}
+
+.pagination-container li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  text-orientation:sideways;
+}
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+
