@@ -71,8 +71,8 @@ const Drawer: FC<Props> = ({ isOpen, onClose }) => {
     onSubmit: async (values, { setStatus, setSubmitting, resetForm }) => {
       setLoading(true);
       try {
-        await sendWhatsAppMessage('+254703797444', values, newMinOrder);
-        //await sendWhatsAppMessage("+254723456454", values, newMinOrder);
+        //await sendWhatsAppMessage('+254703797444', values, newMinOrder);
+        await sendWhatsAppMessage("+254723456454", values, newMinOrder);
         resetForm();
       } catch (error) {
         console.error(error);

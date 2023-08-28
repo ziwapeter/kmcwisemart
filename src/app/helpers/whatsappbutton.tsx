@@ -54,10 +54,10 @@ const WhatsAppButton: React.FC = () => {
   
 
   return (
-    <div className="fixed bottom-4 right-6 z-50" ref={buttonRef}>
+    <div className="fixed bottom-4 right-6 z-30" ref={buttonRef}>
 
 {showPopup && (
-         <div className="absolute bottom-20 right-5 bg-white rounded-md shadow-lg w-64 z-50">
+         <div className="absolute bottom-20 right-5 bg-white rounded-md shadow-lg w-64 z-30">
         <div className=" border-b-[1px] mb-2">
           <div className="flex justify-between items-center p-2"> 
           <div className="text-sm font-semibold text-gray-700">
